@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResumeGo｜免費線上履歷製作工具・履歷模板與 PDF 匯出</title>
+<meta name="description" content="使用 ResumeGo 免費線上履歷製作工具，填寫個人資料、選擇彩色履歷模板，即時預覽並列印或另存 PDF。簡單三步，打造清楚專業的求職履歷。">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ResumeGo｜免費線上履歷製作工具">
+<meta property="og:description" content="挑選履歷模板、即時預覽，輕鬆完成你的求職履歷。">
+<meta property="og:locale" content="zh_TW">
+<meta name="theme-color" content="#7257e8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"ResumeGo","applicationCategory":"BusinessApplication","operatingSystem":"Any","inLanguage":"zh-TW","description":"免費線上履歷製作工具，可填寫履歷資料、切換模板、即時預覽及列印或另存 PDF。","offers":{"@type":"Offer","price":"0","priceCurrency":"TWD"}}
+</script>
+<style>
+:root{--ink:#29254b;--muted:#716d8d;--purple:#7257e8;--pink:#ff6fae;--yellow:#ffd66b;--mint:#75dfc2;--paper:#fff;--bg:#f7f5ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans TC",system-ui,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #ece8ff}
+.nav{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:23px;font-weight:900;letter-spacing:-1px}.brand b{color:var(--purple)}.nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:14px}
+button,.btn{border:0;border-radius:13px;padding:12px 17px;font-weight:750;cursor:pointer;background:var(--purple);color:white;box-shadow:0 5px 14px #7257e833}button:hover,.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}button:disabled{opacity:.45;cursor:not-allowed;transform:none}.secondary{background:#f0edff;color:var(--purple);box-shadow:none}.hero{max-width:1180px;margin:35px auto 26px;padding:34px 24px;display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:center}.eyebrow{display:inline-block;background:#fff0f6;color:#d83d83;padding:7px 12px;border-radius:99px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(36px,5vw,58px);line-height:1.13;letter-spacing:-2px;margin:15px 0}.hero h1 span{color:var(--purple)}.hero p{color:var(--muted);line-height:1.8;max-width:550px}.hero-art{background:linear-gradient(135deg,#e8e1ff,#ffe5f0);border-radius:32px;padding:25px;min-height:270px;display:grid;place-items:center;position:relative;overflow:hidden}.mock{background:white;width:min(290px,90%);padding:22px;border-radius:18px;box-shadow:0 20px 50px #5341a333;transform:rotate(3deg)}.mock .line{height:8px;border-radius:8px;background:#e9e5fb;margin:11px 0}.mock .line.short{width:55%}.mock .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--yellow));float:right}
+.container{max-width:1180px;margin:0 auto;padding:0 22px 60px}.section-title{display:flex;justify-content:space-between;align-items:end;margin:30px 0 16px}.section-title h2{margin:0;font-size:25px}.section-title p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{background:white;padding:20px;border:1px solid #eeeaff;border-radius:19px}.feature .emoji{font-size:26px}.feature h3{margin:9px 0 5px}.feature p{color:var(--muted);font-size:13px;line-height:1.6;margin:0}
+.builder{display:grid;grid-template-columns:minmax(0,1fr) minmax(330px,.9fr);gap:18px;align-items:start}.panel{background:white;border:1px solid #eeeaff;border-radius:20px;padding:21px;box-shadow:0 8px 25px #44338a0a}.panel h3{margin:0 0 15px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#615c80}.field input,.field textarea,.field select{border:1px solid #e6e1f5;border-radius:11px;padding:11px 12px;font:inherit;color:var(--ink);background:#fff;outline:none;width:100%}.field input:focus,.field textarea:focus{border-color:var(--purple);box-shadow:0 0 0 3px #7257e81c}.field textarea{min-height:82px;resize:vertical}.hint{font-size:11px;color:var(--muted);line-height:1.5}.templates{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}.template{border:1px solid #e6e1f5;background:#fff;color:var(--ink);box-shadow:none;padding:9px 12px}.template.active{border-color:var(--purple);background:#f2efff;color:var(--purple)}.preview-wrap{position:sticky;top:83px}.preview-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.resume{background:white;min-height:570px;padding:30px;box-shadow:0 8px 30px #44338a12;border:1px solid #eee;border-radius:12px;color:#24213c}.resume h1{font-size:28px;margin:0 0 5px}.resume .role{color:#7257e8;font-weight:700}.resume .contact{font-size:11px;color:#777;margin:10px 0 22px}.resume h4{font-size:12px;text-transform:uppercase;letter-spacing:1.2px;border-bottom:2px solid #eee8ff;padding-bottom:7px;margin:20px 0 8px;color:#5b4cc1}.resume p{font-size:12px;line-height:1.7;white-space:pre-wrap;margin:4px 0}.resume .item{font-size:12px;margin:8px 0}.resume .item b{display:block}.resume.modern{border-top:9px solid var(--purple)}.resume.coral{border-top:9px solid #ff789e}.resume.coral h4{color:#d94c75;border-color:#ffe0e9}.resume.fresh{border-top:9px solid #28b99b}.resume.fresh h4{color:#168b76;border-color:#d9f5ee}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.pricing{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.price-card{background:white;border:1px solid #eeeaff;border-radius:20px;padding:22px}.price-card.featured{border:2px solid var(--purple);background:linear-gradient(150deg,#fff,#f5f1ff)}.price{font-size:32px;font-weight:900;margin:10px 0}.price-card ul{padding-left:19px;color:var(--muted);font-size:13px;line-height:2}.tag{font-size:11px;font-weight:800;background:#fff0f6;color:#d83d83;padding:5px 9px;border-radius:99px}
+footer{text-align:center;padding:28px;color:var(--muted);font-size:12px;border-top:1px solid #ece8ff}.notice{background:#fff8df;border:1px solid #ffe8a3;padding:12px 14px;border-radius:12px;color:#745a13;font-size:12px;line-height:1.6;margin:14px 0}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#29254b;color:white;padding:12px 18px;border-radius:12px;display:none;z-index:20;box-shadow:0 8px 25px #0002}.modal{display:none;position:fixed;inset:0;background:#211c3c88;z-index:30;place-items:center;padding:18px}.modal.show{display:grid}.dialog{background:white;border-radius:20px;padding:24px;max-width:420px;width:100%}.dialog h3{margin-top:0}.dialog p{color:var(--muted);font-size:13px;line-height:1.6}.dialog-actions{display:flex;gap:9px;margin-top:18px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;margin-top:15px}.hero-art{min-height:210px}.builder{grid-template-columns:1fr}.preview-wrap{position:static}.features{grid-template-columns:1fr}.nav a{display:none}.pricing{grid-template-columns:1fr}}
+@media print{header,.hero,.features,.section-title,.builder>.panel,.preview-head,.actions,.pricing,footer,.notice{display:none!important}body{background:white}.container{padding:0;margin:0}.builder{display:block}.preview-wrap{position:static}.panel{border:0;padding:0;box-shadow:none}.resume{border:0!important;box-shadow:none;min-height:auto;padding:15mm}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">Resume<b>Go</b> ✦</div><nav><a href="#features">特色</a><a href="#builder">履歷製作</a><a href="#pricing">方案價格</a></nav><button onclick="document.querySelector('#builder').scrollIntoView({behavior:'smooth'})">開始製作</button></div></header>
+<section class="hero"><div><span class="eyebrow">✦ YOUR CAREER, YOUR STORY</span><h1>讓好履歷，<br><span>替你打開下一扇門。</span></h1><p>不用設計經驗，也不用從空白開始。填入你的經歷、挑選喜歡的版型，即時預覽並匯出履歷。</p><button onclick="document.querySelector('#builder').scrollIntoView({behavior:'smooth'})">免費製作履歷 →</button></div><div class="hero-art"><div class="mock"><div class="avatar"></div><div style="font-weight:900;font-size:19px">YOUR NAME</div><div style="color:#7257e8;font-size:11px">CREATIVE PROFESSIONAL</div><div class="line"></div><div class="line short"></div><div style="font-size:10px;color:#777;margin-top:18px">EXPERIENCE</div><div class="line"></div><div class="line"></div><div class="line short"></div></div></div></section>
+<div class="container">
+<section id="features"><div class="section-title"><div><h2>簡單三步，完成專業履歷</h2><p>把時間留給準備面試，排版交給 ResumeGo。</p></div></div><div class="features">
+<div class="feature"><div class="emoji">📝</div><h3>填寫資料</h3><p>輸入個人資訊、學歷、工作經驗與專長。</p></div>
+<div class="feature"><div class="emoji">🎨</div><h3>挑選版型</h3><p>切換不同風格，即時查看履歷呈現效果。</p></div>
+<div class="feature"><div class="emoji">📄</div><h3>匯出 PDF</h3><p>預覽完成後即可列印或另存為 PDF。</p></div></div></section>
+<section id="builder"><div class="section-title"><div><h2>履歷製作工作區</h2><p>資料只保存在目前瀏覽器，不會上傳至伺服器。</p></div><span class="tag">LIVE PREVIEW</span></div>
+<div class="builder"><div class="panel"><h3>① 填寫你的資料</h3>
+<div class="formgrid">
+<div class="field"><label for="name">姓名</label><input id="name" placeholder="例如：陳小明" value="陳小明"></div>
+<div class="field"><label for="role">應徵職稱</label><input id="role" placeholder="例如：行銷企劃" value="行銷企劃"></div>
+<div class="field"><label for="email">電子郵件</label><input id="email" type="email" placeholder="name@email.com" value="hello@example.com"></div>
+<div class="field"><label for="phone">聯絡電話</label><input id="phone" placeholder="09xx-xxx-xxx" value="0912-345-678"></div>
+<div class="field full"><label for="location">所在地／個人網站</label><input id="location" placeholder="例如：台灣・台中｜portfolio.com" value="台灣・台中"></div>
+<div class="field full"><label for="summary">個人簡介</label><textarea id="summary" placeholder="用 2～3 句話介紹你的專長與職涯方向。">具備內容企劃與社群經營熱忱，擅長整理資訊、溝通協作及以數據優化內容。</textarea></div>
+<div class="field full"><label for="education">學歷</label><textarea id="education" placeholder="學校／科系／就讀期間">○○大學｜企業管理學系｜2022–2026</textarea></div>
+<div class="field full"><label for="experience">工作／專案經驗</label><textarea id="experience" placeholder="職稱或專案名稱、期間、負責內容與成果">校園社群企劃｜2024–2025\n規劃每月社群主題與貼文內容，協助提升貼文互動率。</textarea></div>
+<div class="field full"><label for="skills">技能（以逗號分隔）</label><input id="skills" value="Canva, 社群企劃, Excel, 文案撰寫" placeholder="例如：Excel, Canva, 專案管理"></div>
+</div>
+<div class="hint">小提醒：請勿填入身分證字號、銀行資料或其他不必要的敏感個資。</div>
+<h3 style="margin-top:23px">② 選擇履歷風格</h3><div class="templates"><button class="template active" data-theme="modern">💜 活力紫</button><button class="template" data-theme="coral">🩷 甜美珊瑚</button><button class="template" data-theme="fresh">💚 清新薄荷</button></div>
+<div class="actions"><button class="secondary" id="saveBtn">儲存資料</button><button class="secondary" id="clearBtn">清空表單</button></div>
+<div class="notice">目前為可操作的課堂 MVP：履歷資料可在本機儲存、即時預覽及匯出 PDF。付費按鈕使用示範解鎖，不會真的扣款。</div>
+</div>
+<div class="panel preview-wrap"><div class="preview-head"><h3 style="margin:0">③ 即時預覽</h3><span class="tag">PREVIEW</span></div>
+<div id="resume" class="resume modern"><h1 id="p-name">陳小明</h1><div class="role" id="p-role">行銷企劃</div><div class="contact" id="p-contact">hello@example.com　｜　0912-345-678　｜　台灣・台中</div><h4>個人簡介 / PROFILE</h4><p id="p-summary"></p><h4>學歷 / EDUCATION</h4><p id="p-education"></p><h4>經驗 / EXPERIENCE</h4><p id="p-experience"></p><h4>技能 / SKILLS</h4><p id="p-skills"></p></div>
+<div class="actions"><button id="pdfBtn">下載／列印 PDF</button><button class="secondary" id="copyBtn">複製履歷文字</button></div>
+</div></div></section>
+<section id="pricing"><div class="section-title"><div><h2>選擇適合你的方案</h2><p>先免費體驗，需要更多版型再升級。</p></div></div>
+<div class="pricing"><div class="price-card"><span class="tag">FREE</span><div class="price">NT$0</div><p>適合第一次製作履歷的你。</p><ul><li>基本資料填寫</li><li>三款風格預覽</li><li>列印／另存 PDF</li></ul><button class="secondary" onclick="document.querySelector('#builder').scrollIntoView({behavior:'smooth'})">免費開始</button></div>
+<div class="price-card featured"><span class="tag">PLUS · 示範方案</span><div class="price">NT$99 <small style="font-size:13px;color:#716d8d">/ 次</small></div><p>更多模板與求職文字素材。</p><ul><li>進階模板概念展示</li><li>自傳與求職信範本</li><li>多份履歷管理規劃</li></ul><button id="upgradeBtn">示範解鎖進階方案</button><p class="hint" id="premiumStatus">尚未解鎖</p></div></div>
+<div class="notice">正式商業上線前，需接上第三方金流、伺服器端付款驗證與會員／訂單資料庫。本示範不會收取真實款項，也不會將使用者資料送出。</div>
+</section>
+</div><footer>© 2026 ResumeGo｜讓每一段經歷，都有更好的呈現方式。<br>本網站為微創業課程 MVP 示範，非正式職涯顧問服務。</footer>
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal"><div class="dialog"><h3>✨ 進階方案示範解鎖</h3><p>這是課堂展示用的模擬付款流程。按下確認只會在本機標示「已解鎖」，不會連接金流或扣款。</p><div class="dialog-actions"><button class="secondary" id="cancelModal">返回</button><button id="confirmUnlock">確認示範解鎖</button></div></div></div>
+<script>
+const ids=['name','role','email','phone','location','summary','education','experience','skills'];
+const $=id=>document.getElementById(id);
+let theme='modern';
+function val(id){return $(id).value.trim()}
+function update(){
+ $('p-name').textContent=val('name')||'你的姓名';
+ $('p-role').textContent=val('role')||'應徵職稱';
+ $('p-contact').textContent=[val('email'),val('phone'),val('location')].filter(Boolean).join('　｜　');
+ $('p-summary').textContent=val('summary')||'在這裡呈現你的個人簡介。';
+ $('p-education').textContent=val('education')||'請填寫學歷資訊。';
+ $('p-experience').textContent=val('experience')||'請填寫工作或專案經驗。';
+ $('p-skills').textContent=val('skills')||'請填寫專業技能。';
+ $('resume').className='resume '+theme;
+}
+ids.forEach(id=>$(id).addEventListener('input',update));
+document.querySelectorAll('.template').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.template').forEach(b=>b.classList.remove('active'));
+ btn.classList.add('active');theme=btn.dataset.theme;update();
+}));
+function toast(msg){$('toast').textContent=msg;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',2400)}
+$('saveBtn').onclick=()=>{const data={};ids.forEach(id=>data[id]=$(id).value);data.theme=theme;localStorage.setItem('resumego-data',JSON.stringify(data));toast('已儲存於此瀏覽器！')};
+$('clearBtn').onclick=()=>{if(!confirm('確定清空所有欄位？'))return;ids.forEach(id=>$(id).value='');theme='modern';document.querySelectorAll('.template').forEach((b,i)=>b.classList.toggle('active',i===0));update();toast('表單已清空')};
+try{const saved=JSON.parse(localStorage.getItem('resumego-data')||'null');if(saved){ids.forEach(id=>{if(saved[id]!==undefined)$(id).value=saved[id]});if(['modern','coral','fresh'].includes(saved.theme)){theme=saved.theme;document.querySelectorAll('.template').forEach(b=>b.classList.toggle('active',b.dataset.theme===theme))}}}catch(e){}
+update();
+$('pdfBtn').onclick=()=>window.print();
+$('copyBtn').onclick=async()=>{const text=`${val('name')}｜${val('role')}\n${val('email')}｜${val('phone')}｜${val('location')}\n\n個人簡介\n${val('summary')}\n\n學歷\n${val('education')}\n\n經驗\n${val('experience')}\n\n技能\n${val('skills')}`;try{await navigator.clipboard.writeText(text);toast('履歷文字已複製！')}catch(e){toast('瀏覽器不允許自動複製，請使用 PDF 列印功能。')}};
+$('upgradeBtn').onclick=()=> $('modal').classList.add('show');
+$('cancelModal').onclick=()=> $('modal').classList.remove('show');
+$('confirmUnlock').onclick=()=>{$('modal').classList.remove('show');$('premiumStatus').textContent='✓ 已示範解鎖（未收款）';$('premiumStatus').style.color='#168b76';toast('示範解鎖成功，未產生任何費用。')};
+$('modal').addEventListener('click',e=>{if(e.target===$('modal'))$('modal').classList.remove('show')});
+</script>
+</body></html>
