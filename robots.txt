@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://resumego-web.pages.dev/sitemap.xml
